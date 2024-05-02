@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(231, 162, 83);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    flex-direction: column;
+
+
+    height: 100vh;
+    align-items: center;
+}
+
+.image-container {
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transform: perspective(1000px) rotateY(0deg);
+    position: relative;
+
+}
+
+.image-container span{
+    transform:rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+}
+
+.image-container img {
+    position absolute;
+    top: 0;
+    left: 0%; 
+    width: 80%;
+}
+
+.btn
